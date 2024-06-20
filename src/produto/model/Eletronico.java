@@ -1,13 +1,12 @@
 package produto.model;
 
-public class Eletronico extends GeralProd{
+public class Eletronico extends CaracteristicaGeralDoProduto{
 
 	private String marca;
 	private String modelo;
 	
-	 // Construtor
-    public Eletronico(String nome, String descricao, double preco, int quantidade, String marca, String modelo) {
-        super(nome, descricao, preco, quantidade);
+    public Eletronico(int id,String nome, String descricao, double preco, int quantidade, String marca, String modelo) {
+        super(id,nome, descricao, preco, quantidade);
         this.marca = marca;
         this.modelo = modelo;
     }
