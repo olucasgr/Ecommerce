@@ -1,12 +1,16 @@
 package menu;
 
 import java.util.Scanner;
+import produto.model.Eletronico;
 
 public class Menu {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		Eletronico eletronico1 = new Eletronico("Notebook", "Notebook de alto desempenho", 3000.0, 10,"Dell","Inspiron");
+		eletronico1.visualizar();
+		
 		Scanner sc = new Scanner (System.in);
 		
 		// Criando as variáveis
@@ -60,6 +64,7 @@ public class Menu {
  
 		
 		sc.close();
+		
 	}
 	
 	public static void sobre() {
